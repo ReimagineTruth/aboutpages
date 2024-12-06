@@ -1,16 +1,13 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   About - Reimagine Truth
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   body {
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Reimagine Truth</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
             font-family: 'Roboto', sans-serif;
         }
         @keyframes fadeIn {
@@ -53,231 +50,164 @@
             50% { transform: scale(0.9); }
             100% { transform: scale(1); }
         }
-        .backdrop {
-            background: rgba(0, 0, 0, 0.5);
-            transition: opacity 0.3s ease-in-out;
-        }
-  </style>
- </head>
- <body class="bg-gray-900 text-gray-200">
-  <div class="flex flex-col md:flex-row">
-   <!-- Sidebar -->
-   <aside class="w-full md:w-64 bg-gray-800 h-auto md:h-screen p-4 hidden md:block sticky-sidebar sidebar" id="sidebar">
-    <div class="flex items-center mb-6">
-     <img alt="A sharply dressed, intense-looking male character" class="w-16 h-16 rounded-full" height="64" src="https://i.ibb.co/p30Q5fs/Leonardo-Kino-XL-A-sharplydressed-intenselooking-male-characte-3.jpg" width="64"/>
-     <h2 class="ml-4 text-xl font-bold">
-      Reimagine Truth
-     </h2>
-    </div>
-    <nav>
-     <ul>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://reimaginetruth.github.io/">
-        Home
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">
-        My Assets
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">
-        About
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://linktr.ee/reimagine_truth" target="_blank">
-        Community
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">
-        Settings
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </aside>
-   <!-- Mobile Menu Button -->
-   <div class="md:hidden p-4">
-    <button class="text-gray-200 focus:outline-none" id="menuButton">
-     <i class="fas text-xl fa-bars" id="menuIcon">
-     </i>
-    </button>
-   </div>
-   <!-- Mobile Sidebar -->
-   <aside class="w-full bg-gray-800 h-screen p-4 fixed top-0 left-0 transform -translate-x-full transition-transform duration-300 z-50" id="mobileSidebar">
-    <div class="flex items-center mb-6">
-     <img alt="A sharply dressed, intense-looking male character" class="w-16 h-16 rounded-full" height="64" src="https://i.ibb.co/p30Q5fs/Leonardo-Kino-XL-A-sharplydressed-intenselooking-male-characte-3.jpg" width="64"/>
-     <h2 class="ml-4 text-xl font-bold">
-      Reimagine Truth
-     </h2>
-    </div>
-    <nav>
-     <ul>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://reimaginetruth.github.io/">
-        Home
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">
-        My Assets
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">
-        About
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://linktr.ee/reimagine_truth" target="_blank">
-        Community
-       </a>
-      </li>
-      <li class="mb-4">
-       <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">
-        Settings
-       </a>
-      </li>
-     </ul>
-    </nav>
-   </aside>
-   <!-- Backdrop -->
-   <div class="fixed inset-0 z-40 bg-black opacity-0 pointer-events-none backdrop" id="backdrop"></div>
-   <div class="flex-1">
-    <!-- Header Section -->
-    <header class="h-72 flex items-center justify-center text-center relative">
-     <img alt="A sharply dressed, intense-looking male character in a futuristic setting" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/1FQV3oXz2eyKKy6Cq1zIDUuMKYdhAqmo1q9QUZxnSM93cC8JA.jpg" style="display: none;" width="1920"/>
-     <div class="relative bg-black bg-opacity-50 p-6 rounded-lg">
-      <h1 class="text-4xl font-bold text-white">
-       About Reimagine Truth
-      </h1>
-      <p class="mt-4 text-lg text-gray-300">
-       Reimagining the intersection of art, technology, and truth.
-      </p>
-     </div>
-    </header>
-    <!-- Main Content -->
-    <main class="px-6 py-12">
-     <!-- About Section -->
-     <section class="mb-12">
-      <h2 class="text-3xl font-bold text-center mb-6">
-       Our Vision
-      </h2>
-      <p class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
-       Reimagine Truth is a groundbreaking project that bridges art, technology, and storytelling through NFTs. 
-                Our mission is to empower creators, collectors, and truth seekers to explore unique narratives and own a piece of digital history.
-                Each NFT in the Truth Seekers Deck embodies a story, a purpose, and a chance to reimagine the world through creativity and innovation.
-      </p>
-     </section>
-     <!-- Features Section -->
-     <section class="mb-12">
-      <h2 class="text-3xl font-bold text-center mb-6">
-       What We Offer
-      </h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-       <!-- Feature 1 -->
-       <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <i class="fas fa-palette text-blue-400 text-4xl mb-4">
-        </i>
-        <h3 class="text-2xl font-bold mb-2">
-         Unique NFT Collection
-        </h3>
-        <p class="text-gray-300">
-         Discover the Truth Seekers Deck, a curated collection of digital assets with rarity tiers and stunning designs.
-        </p>
-       </div>
-       <!-- Feature 2 -->
-       <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <i class="fas fa-cogs text-blue-400 text-4xl mb-4">
-        </i>
-        <h3 class="text-2xl font-bold mb-2">
-         Blockchain Integration
-        </h3>
-        <p class="text-gray-300">
-         Powered by the Optimism chain, Reimagine Truth leverages the transparency and security of blockchain technology.
-        </p>
-       </div>
-       <!-- Feature 3 -->
-       <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-        <i class="fas fa-users text-blue-400 text-4xl mb-4">
-        </i>
-        <h3 class="text-2xl font-bold mb-2">
-         Community Empowerment
-        </h3>
-        <p class="text-gray-300">
-         Join a vibrant community of truth seekers and gain exclusive access to events, airdrops, and collaborations.
-        </p>
-       </div>
-      </div>
-     </section>
-     <!-- Roadmap Section -->
-     <section class="mb-12">
-      <h2 class="text-3xl font-bold text-center mb-6">
-       Our Roadmap
-      </h2>
-      <ul class="list-disc list-inside max-w-4xl mx-auto text-lg leading-relaxed">
-       <li>
-        January 1, 2025: Official launch of Reimagine Truth on the Optimism blockchain.
-       </li>
-       <li>
-        Q1 2025: Release of the Truth Seekers Deck NFT collection on platforms like OpenSea and Zora.
-       </li>
-       <li>
-        Q2 2025: Introduction of the native token, $RTO, and staking opportunities.
-       </li>
-       <li>
-        Q3 2025: Expansion to include community-driven collaborations and decentralized governance.
-       </li>
-      </ul>
-     </section>
-     <!-- Call to Action -->
-     <section class="text-center">
-      <h2 class="text-3xl font-bold mb-6">
-       Join the Revolution
-      </h2>
-      <p class="text-lg leading-relaxed mb-6">
-       Be part of a movement that redefines creativity and truth in the digital age. Follow us on social media, explore our NFTs, and join the conversation!
-      </p>
-      <a class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600" href="https://linktr.ee/reimagine_truth" target="_blank">
-       Join Our Community
-      </a>
-     </section>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
-     <p>
-      © 2024 Reimagine Truth. All rights reserved.
-     </p>
-    </footer>
-   </div>
-  </div>
-  <script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js">
-  </script>
-  <script>
-   const menuButton = document.getElementById('menuButton');
-        const mobileSidebar = document.getElementById('mobileSidebar');
-        const menuIcon = document.getElementById('menuIcon');
-        const backdrop = document.getElementById('backdrop');
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    <div class="flex flex-col md:flex-row">
+        <aside class="w-full md:w-64 bg-gray-800 h-auto md:h-screen p-4 hidden md:block sticky-sidebar sidebar" id="sidebar">
+            <div class="flex items-center mb-6">
+                <img alt="A sharply dressed, intense-looking male character" class="w-16 h-16 rounded-full" height="64" src="https://i.ibb.co/p30Q5fs/Leonardo-Kino-XL-A-sharplydressed-intenselooking-male-characte-3.jpg" width="64"/>
+                <h2 class="ml-4 text-xl font-bold">Reimagine Truth</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class="mb-4">
+                        <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://reimaginetruth.github.io/">Home</a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">My Assets</a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://reimaginetruth.github.io/aboutpages/" onclick="redirectToAbout()">About</a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="https://linktr.ee/reimagine_truth" target="_blank">Community</a>
+                    </li>
+                    <li class="mb-4">
+                        <a class="text-lg text-gray-200 hover:text-gray-100 sidebar-item" href="#">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="flex-1">
+            <header class="bg-gray-800 text-gray-200 p-4 flex justify-between items-center relative shadow-md">
+                <button class="md:hidden text-gray-200 absolute top-4 left-4" id="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="flex flex-col items-center w-full">
+                    <img alt="A sharply dressed, intense-looking male character" class="w-24 mb-2 fade-in" height="50" src="https://i.ibb.co/p30Q5fs/Leonardo-Kino-XL-A-sharplydressed-intenselooking-male-characte-3.jpg" width="100"/>
+                    <h1 class="text-2xl font-bold text-center fade-in">Welcome to Reimagine Truth</h1>
+                    <p class="text-lg text-center fade-in">Explore the unique stories of our NFT characters.</p>
+                </div>
+            </header>
+            <main class="p-4">
+                <div class="flex justify-center mb-6">
+                    <input type="text" id="search-bar" placeholder="Search your NFT serial number #" class="w-full max-w-md p-2 rounded bg-gray-700 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="ml-2 p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" onclick="searchNFT()">Search</button>
+                </div>
+                <div class="flex justify-center mb-6" id="view-all-container" style="display: none;">
+                    <button class="p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" onclick="showAllNFTs()">View All</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4" id="nft-grid">
+                    <!-- Card 1 -->
+                    <div class="border border-gray-700 p-4 bg-gray-800 nft-card slide-in" data-serial="#1" style="display: none;">
+                        <img alt="NFT character with a futuristic look" class="w-full mb-2" src="https://i.ibb.co/1mJM8ns/Image-7.png">
+                        <h3 class="text-xl font-bold">Truth Seeker #1</h3>
+                        <p>Rarity: Common</p>
+                        <a href="#" class="text-blue-500">View Details</a>
+                    </div>
 
-        function toggleMenu() {
-            if (mobileSidebar.classList.contains('-translate-x-full')) {
-                mobileSidebar.classList.remove('-translate-x-full');
-                backdrop.classList.remove('opacity-0', 'pointer-events-none');
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-times');
+                    <!-- Card 2 -->
+                    <div class="border border-gray-700 p-4 bg-gray-800 nft-card slide-in" data-serial="#2" style="display: none;">
+                        <img alt="NFT character with a mystical aura" class="w-full mb-2" src="https://i.ibb.co/zbjm89d/Image-4.png">
+                        <h3 class="text-xl font-bold">Truth Seeker #2</h3>
+                        <p>Rarity: Rare</p>
+                        <a href="#" class="text-blue-500">View Details</a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="border border-gray-700 p-4 bg-gray-800 nft-card slide-in" data-serial="#3" style="display: none;">
+                        <img alt="NFT character with a cyberpunk style" class="w-full mb-2" src="https://i.ibb.co/z8F7HW5/Image-3.png">
+                        <h3 class="text-xl font-bold">Truth Seeker #3</h3>
+                        <p>Rarity: Ultra Rare</p>
+                        <a href="#" class="text-blue-500">View Details</a>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="border border-gray-700 p-4 bg-gray-800 nft-card slide-in" data-serial="#4" style="display: none;">
+                        <img alt="NFT character with a mystical aura" class="w-full mb-2" src="https://i.ibb.co/XXWGTy4/Image-5.png">
+                        <h3 class="text-xl font-bold">Truth Seeker #4</h3>
+                        <p>Rarity: Rare</p>
+                        <a href="#" class="text-blue-500">View Details</a>
+                    </div>
+                </div>
+            </main>
+            <footer class="bg-gray-800 text-gray-200 p-4 text-center shadow-md hidden" id="footer">
+                <p>© 2024 Reimagine Truth. All rights reserved.</p>
+                <div id="view-all-container" style="display: none;" class="mt-4">
+                    <button class="p-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" onclick="showAllNFTs()">View All</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <audio id="click-sound" src="https://www.soundjay.com/button/sounds/button-16.mp3" preload="auto"></audio>
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            const footer = document.getElementById('footer');
+            if (sidebar.classList.contains('hidden')) {
+                sidebar.classList.remove('hidden');
+                footer.classList.remove('hidden');
             } else {
-                mobileSidebar.classList.add('-translate-x-full');
-                backdrop.classList.add('opacity-0', 'pointer-events-none');
-                menuIcon.classList.remove('fa-times');
-                menuIcon.classList.add('fa-bars');
+                sidebar.classList.add('hidden');
+                footer.classList.add('hidden');
             }
+            playClickSound();
+        });
+
+        function searchNFT() {
+            const searchValue = document.getElementById('search-bar').value.trim();
+            const nftCards = document.querySelectorAll('.nft-card');
+            let found = false;
+
+            nftCards.forEach(card => {
+                if (card.getAttribute('data-serial') === searchValue) {
+                    card.style.display = 'block';
+                    found = true;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            if (found) {
+                document.getElementById('view-all-container').style.display = 'flex';
+            } else {
+                document.getElementById('view-all-container').style.display = 'none';
+            }
+            playClickSound();
         }
 
-        menuButton.addEventListener('click', toggleMenu);
-        backdrop.addEventListener('click', toggleMenu);
-  </script>
- </body>
+        function showAllNFTs() {
+            const nftCards = document.querySelectorAll('.nft-card');
+            nftCards.forEach(card => {
+                card.style.display = 'block';
+            });
+            document.getElementById('view-all-container').style.display = 'none';
+            playClickSound();
+        }
+
+        function scrollToStart() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            playClickSound();
+        }
+
+        function playClickSound() {
+            const clickSound = document.getElementById('click-sound');
+            clickSound.play();
+        }
+
+        function redirectToAbout() {
+            window.location.href = "https://reimaginetruth.github.io/aboutpages/";
+        }
+
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.classList.add('button-click');
+                setTimeout(() => {
+                    button.classList.remove('button-click');
+                }, 200);
+            });
+        });
+    </script>
+</body>
 </html>
