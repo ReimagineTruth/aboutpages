@@ -1,122 +1,127 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Sign Up Portal</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <script>
-        // Toggle dark mode
-        function toggleDarkMode() {
-            document.documentElement.classList.toggle('dark');
-            const darkModeButtonIcon = document.getElementById('darkModeButtonIcon');
-            if (document.documentElement.classList.contains('dark')) {
-                darkModeButtonIcon.classList.remove('fa-moon');
-                darkModeButtonIcon.classList.add('fa-sun');
-            } else {
-                darkModeButtonIcon.classList.remove('fa-sun');
-                darkModeButtonIcon.classList.add('fa-moon');
-            }
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   About - Reimagine Truth
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
         }
-
-        // Show sign up form
-        function showSignUp() {
-            document.getElementById('login').classList.add('hidden');
-            document.getElementById('signup').classList.remove('hidden');
-            document.getElementById('forgot-password').classList.add('hidden');
-        }
-
-        // Show login form
-        function showLogin() {
-            document.getElementById('signup').classList.add('hidden');
-            document.getElementById('login').classList.remove('hidden');
-            document.getElementById('forgot-password').classList.add('hidden');
-        }
-
-        // Show forgot password form
-        function showForgotPassword() {
-            document.getElementById('login').classList.add('hidden');
-            document.getElementById('signup').classList.add('hidden');
-            document.getElementById('forgot-password').classList.remove('hidden');
-        }
-
-        // Enable dark mode by default
-        document.addEventListener('DOMContentLoaded', (event) => {
-            document.documentElement.classList.add('dark');
-            const darkModeButtonIcon = document.getElementById('darkModeButtonIcon');
-            darkModeButtonIcon.classList.remove('fa-moon');
-            darkModeButtonIcon.classList.add('fa-sun');
-        });
-    </script>
-</head>
-<body class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen font-roboto">
-    <div class="absolute top-4 right-4">
-        <button id="darkModeButton" onclick="toggleDarkMode()" class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-4 py-2 rounded-lg">
-            <i id="darkModeButtonIcon" class="fas fa-sun"></i>
-        </button>
+  </style>
+ </head>
+ <body class="bg-gray-900 text-gray-200">
+  <!-- Header Section -->
+  <header class="h-72 flex items-center justify-center text-center relative">
+   <img alt="A sharply dressed, intense-looking male character in a futuristic setting" class="absolute inset-0 w-full h-full object-cover opacity-50" height="1080" src="https://storage.googleapis.com/a1aa/image/1FQV3oXz2eyKKy6Cq1zIDUuMKYdhAqmo1q9QUZxnSM93cC8JA.jpg" style="display: none;" width="1920"/>
+   <div class="relative bg-black bg-opacity-50 p-6 rounded-lg">
+    <h1 class="text-4xl font-bold text-white">
+     About Reimagine Truth
+    </h1>
+    <p class="mt-4 text-lg text-gray-300">
+     Reimagining the intersection of art, technology, and truth.
+    </p>
+   </div>
+  </header>
+  <!-- Main Content -->
+  <main class="px-6 py-12">
+   <!-- About Section -->
+   <section class="mb-12">
+    <h2 class="text-3xl font-bold text-center mb-6">
+     Our Vision
+    </h2>
+    <p class="text-lg leading-relaxed text-center max-w-4xl mx-auto">
+     Reimagine Truth is a groundbreaking project that bridges art, technology, and storytelling through NFTs. 
+                Our mission is to empower creators, collectors, and truth seekers to explore unique narratives and own a piece of digital history.
+                Each NFT in the Truth Seekers Deck embodies a story, a purpose, and a chance to reimagine the world through creativity and innovation.
+    </p>
+   </section>
+   <!-- Features Section -->
+   <section class="mb-12">
+    <h2 class="text-3xl font-bold text-center mb-6">
+     What We Offer
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <!-- Feature 1 -->
+     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+      <i class="fas fa-palette text-blue-400 text-4xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2">
+       Unique NFT Collection
+      </h3>
+      <p class="text-gray-300">
+       Discover the Truth Seekers Deck, a curated collection of digital assets with rarity tiers and stunning designs.
+      </p>
+     </div>
+     <!-- Feature 2 -->
+     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+      <i class="fas fa-cogs text-blue-400 text-4xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2">
+       Blockchain Integration
+      </h3>
+      <p class="text-gray-300">
+       Powered by the Optimism chain, Reimagine Truth leverages the transparency and security of blockchain technology.
+      </p>
+     </div>
+     <!-- Feature 3 -->
+     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+      <i class="fas fa-users text-blue-400 text-4xl mb-4">
+      </i>
+      <h3 class="text-2xl font-bold mb-2">
+       Community Empowerment
+      </h3>
+      <p class="text-gray-300">
+       Join a vibrant community of truth seekers and gain exclusive access to events, airdrops, and collaborations.
+      </p>
+     </div>
     </div>
-    <div id="login" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
-        <h2 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">Login</h2>
-        <form action="#" method="POST">
-            <div class="mb-4">
-                <label for="username" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Username</label>
-                <input type="text" id="username" name="username" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200" required>
-            </div>
-            <div class="mb-6">
-                <label for="password" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Password</label>
-                <input type="password" id="password" name="password" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200" required>
-            </div>
-            <div class="flex items-center justify-between mb-4">
-                <div class="flex items-center">
-                    <input type="checkbox" id="remember" name="remember" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 dark:border-gray-600 rounded">
-                    <label for="remember" class="ml-2 block text-gray-900 dark:text-gray-300">Remember me</label>
-                </div>
-                <a href="javascript:void(0);" onclick="showForgotPassword()" class="text-blue-600 dark:text-blue-400 hover:underline">Forgot password?</a>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Login</button>
-        </form>
-        <div class="text-center my-4">
-            <span class="text-gray-600 dark:text-gray-400">or</span>
-        </div>
-        <div class="text-center">
-            <a href="/auth/google" class="w-full inline-flex items-center justify-center bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500">
-                <i class="fab fa-google mr-2"></i> Sign in with Google
-            </a>
-        </div>
-        <p class="text-center text-gray-600 dark:text-gray-400 mt-6">Don't have an account? <a href="javascript:void(0);" onclick="showSignUp()" class="text-blue-600 dark:text-blue-400 hover:underline">Sign Up</a></p>
-    </div>
-
-    <div id="signup" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mt-8 hidden">
-        <h2 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">Sign Up</h2>
-        <form action="#" method="POST">
-            <div class="mb-4">
-                <label for="new-username" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Username</label>
-                <input type="text" id="new-username" name="new-username" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200" required>
-            </div>
-            <div class="mb-4">
-                <label for="email" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Email</label>
-                <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200" required>
-            </div>
-            <div class="mb-6">
-                <label for="new-password" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Password</label>
-                <input type="password" id="new-password" name="new-password" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200" required>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Sign Up</button>
-        </form>
-        <p class="text-center text-gray-600 dark:text-gray-400 mt-6">Already have an account? <a href="javascript:void(0);" onclick="showLogin()" class="text-blue-600 dark:text-blue-400 hover:underline">Login</a></p>
-    </div>
-
-    <div id="forgot-password" class="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mt-8 hidden">
-        <h2 class="text-2xl font-bold mb-6 text-center text-gray-900 dark:text-gray-100">Forgot Password</h2>
-        <form action="#" method="POST">
-            <div class="mb-4">
-                <label for="reset-email" class="block text-gray-700 dark:text-gray-300 font-medium mb-2">Email</label>
-                <input type="email" id="reset-email" name="reset-email" class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200" required>
-            </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Reset Password</button>
-        </form>
-        <p class="text-center text-gray-600 dark:text-gray-400 mt-6">Remembered your password? <a href="javascript:void(0);" onclick="showLogin()" class="text-blue-600 dark:text-blue-400 hover:underline">Login</a></p>
-    </div>
-</body>
+   </section>
+   <!-- Roadmap Section -->
+   <section class="mb-12">
+    <h2 class="text-3xl font-bold text-center mb-6">
+     Our Roadmap
+    </h2>
+    <ul class="list-disc list-inside max-w-4xl mx-auto text-lg leading-relaxed">
+     <li>
+      January 1, 2025: Official launch of Reimagine Truth on the Optimism blockchain.
+     </li>
+     <li>
+      Q1 2025: Release of the Truth Seekers Deck NFT collection on platforms like OpenSea and Zora.
+     </li>
+     <li>
+      Q2 2025: Introduction of the native token, $RTO, and staking opportunities.
+     </li>
+     <li>
+      Q3 2025: Expansion to include community-driven collaborations and decentralized governance.
+     </li>
+    </ul>
+   </section>
+   <!-- Call to Action -->
+   <section class="text-center">
+    <h2 class="text-3xl font-bold mb-6">
+     Join the Revolution
+    </h2>
+    <p class="text-lg leading-relaxed mb-6">
+     Be part of a movement that redefines creativity and truth in the digital age. Follow us on social media, explore our NFTs, and join the conversation!
+    </p>
+    <a class="bg-blue-500 text-white py-2 px-6 rounded hover:bg-blue-600" href="https://linktr.ee/reimagine_truth" target="_blank">
+     Join Our Community
+    </a>
+   </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+   <p>
+    © 2024 Reimagine Truth. All rights reserved.
+   </p>
+  </footer>
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js">
+  </script>
+ </body>
 </html>
